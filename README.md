@@ -1,1 +1,1 @@
-# Assignment 2
+# CS361 Main Program
