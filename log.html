@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <script src="log.js" defer></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Session</title>
+</head>
+<body>
+    <nav>
+        <details>
+            <summary>&#9776;</summary>
+            <a href="index.html">Main Menu</a>
+            <a href="log.html">Log Session</a>
+        </details>
+    </nav>
+
+    <datalist id="trick_options">
+        <option value="Ollie"></option>
+    </datalist>
+
+    <h1>Log Session</h1>
+        <p>Track All Your Progress With One Easy Interface</p>
+
+    <form id="log_session_form">
+        <ol>
+            <li>
+                <label for="trick_input">Trick Name</label>
+                <input type="text" list="trick_options" id="trick_input">
+            </li>
+            <li>
+                <label for="trick_lands">Landed</label>
+                <input type="number" min="0" id="trick_lands">
+
+                <label for="trick_attempts">Attempts</label>
+                <input type="number" min="0" id="trick_attempts">
+
+                <p id="trick_landed_too_big"></p>
+
+                <button id="add_trick">Add</button>
+                <p id="trick_empty_error"></p>
+                <ul id="pending_trick_list"></ul>
+            </li>
+            <li>
+                <button type="button" id="save_session">Save Session</button>
+                <a href="index.html?status=cancelled">Cancel</a>
+                <p id="error_empty_list"></p>
+            </li>
+        </ol>
+    </form>
+</body>
+</html>

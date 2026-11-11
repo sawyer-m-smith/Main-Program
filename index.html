@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <script src="app.js" defer></script>
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trick Tracker</title>
+</head>
+<body>
+    <p id="session_update"></p>
+
+    <nav>
+        <details>
+            <summary>&#9776;</summary>
+            <a href="index.html">Main Menu</a>
+            <a href="log.html">Log Session</a>
+        </details>
+    </nav>
+
+    <h1>Trick Tracker</h1>
+        <p>No Phone Number Required</p>
+
+    <form method="get" action="log.html" id="add_trick_form">
+        <h2>Log Trick</h2>
+        <label for="trick_input">Trick Name</label>
+        <input type="text" name="trick" id="trick_input">
+        <button>Log</button>
+    </form>
+
+    <section>
+        <h2>Needs Work</h2>
+            <button class="learn_more_button">?</button>
+            <p hidden>Tricks you land under 30% of the time</p>
+            <ul id="needs_work_list"></ul>
+    </section>
+    <section>
+        <h2>Decent</h2>
+            <button class="learn_more_button">?</button>
+            <p hidden>Tricks you land between 30-69% of the time</p>
+            <ul id="decent_list"></ul>
+    </section>
+    <section>
+        <h2>Got It Down</h2>
+            <button class="learn_more_button">?</button>
+            <p hidden>Tricks you land 70% or more of the time</p>
+            <ul id="got_it_list"></ul>
+    </section>
+</body>
+</html>
